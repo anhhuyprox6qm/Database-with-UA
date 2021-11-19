@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TestApi",
+    "\\TestApi\\TestApi",
+    "\\TestApi\\TestApi\\bin",
+    "\\TestApi\\TestApi\\bin\\x64",
+    "\\TestApi\\TestApi\\bin\\x64\\Debug",
+    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX",
+    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\microsoft.system.package.metadata",
+    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Pages",
+    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Properties"
+  ],
+  "SelectedNode": "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Pages\\ListView.xbf",
+  "PreviewInSolutionExplorer": false
+}

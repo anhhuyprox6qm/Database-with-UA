@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="TestApi.Pages.ListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestApi.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:entities="using:TestApi.Entities"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+
+        <DataTemplate x:Key="ListAccountTemplate" x:DataType="entities:Photo">
+            <StackPanel Margin="12,0,0,0" Grid.Column="1">
+                <TextBlock Text="{x:Bind albumId}" FontSize="12" FontWeight="SemiBold"
+                               Style="{ThemeResource BaseTextBlockStyle}"
+                               HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
+                <TextBlock Text="{x:Bind id}" FontFamily="Segoe UI" FontWeight="Normal"
+                               Style="{ThemeResource BaseTextBlockStyle}"
+                               TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
+                <TextBlock Text="{x:Bind title}" FontFamily="Segoe UI" FontWeight="Normal"
+                               Style="{ThemeResource BaseTextBlockStyle}"
+                               TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
+                <TextBlock Text="{x:Bind url}" FontFamily="Segoe UI" FontWeight="Normal"
+                               Style="{ThemeResource BaseTextBlockStyle}"
+                               TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
+                <Ellipse x:Name="Ellipse" Grid.RowSpan="2"
+                                         Width="70" Height="70"
+                                         Margin="6" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="{x:Bind thumbnailUrl}"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <ListView x:Name="MyListView" ItemTemplate="{StaticResource ListAccountTemplate}">
+        </ListView>
+    </Grid>
+</Page>
