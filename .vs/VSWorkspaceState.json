@@ -7,10 +7,10 @@
     "\\TestApi\\TestApi\\bin\\x64",
     "\\TestApi\\TestApi\\bin\\x64\\Debug",
     "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX",
-    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\microsoft.system.package.metadata",
     "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Pages",
-    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Properties"
+    "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Properties",
+    "\\TestApi\\TestApi\\Entities"
   ],
-  "SelectedNode": "\\TestApi\\TestApi\\bin\\x64\\Debug\\AppX\\Pages\\ListView.xbf",
+  "SelectedNode": "\\TestApi\\TestApi\\Entities\\Photo.cs",
   "PreviewInSolutionExplorer": false
 }
